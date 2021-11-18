@@ -1,0 +1,11 @@
+name: libjq
+version: 0.1.0
+
+targets:
+  jq:
+    main: examples/jq.cr
+
+authors:
+  - maiha <maiha@wota.jp>
+
+license: MIT

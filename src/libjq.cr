@@ -1,2 +1,2 @@
 require "./lib_jq"
-require "./jq"
+require "./libjq/*"

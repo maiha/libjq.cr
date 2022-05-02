@@ -21,12 +21,12 @@ describe testdata do
       exp = test.expected
       if msg = exp.error_message
         begin
-          Jq.run(prog, input)
+          Libjq::Jq.run(prog, input)
         rescue err
           err.to_s.should eq(msg)
         end
       else
-        got = Jq.run(prog, input).to_s.chomp
+        got = Libjq::Jq.run(prog, input).to_s.chomp
 
         # Trim spaces to check equality JSON such as;
         #   {"x":-1} and {"x": -1}

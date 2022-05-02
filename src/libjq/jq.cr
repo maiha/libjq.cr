@@ -1,5 +1,5 @@
 # patch for LibJq
-class Jq
+class Libjq::Jq
   alias State = LibJq::JqState
   alias Jv = LibJq::Jv
 

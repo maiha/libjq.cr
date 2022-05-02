@@ -29,15 +29,14 @@ require "libjq"
 
 filter = ".foo"
 input  = %({"foo": 42, "bar": 43})
-Jq.run(filter, input).to_s # => 42
+Libjq::Jq.run(filter, input).to_s # => 42
 
 filter = %(with_entries(.key |= "KEY_" + .))
 input  = %({"a": 1, "b": 2})
-Jq.run(filter, input).to_s # => {"KEY_a":1,"KEY_b":2}
+Libjq::Jq.run(filter, input).to_s # => {"KEY_a":1,"KEY_b":2}
 ```
 
-See [examples/jq.cr]
-
+See [examples/jq.cr](./examples/jq.cr)
 
 ## Development
 

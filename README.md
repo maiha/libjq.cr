@@ -14,7 +14,7 @@ WARNING: This project is in alpha stage. Currently, this should only be used for
 dependencies:
   libjq:
     github: maiha/libjq
-    version: 0.1.0
+    version: 0.2.0
 ```
 
 2. Run `shards install`
